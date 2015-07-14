@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinRVClient", "WinRVClient.csproj", "{F1D662DA-A0A2-4EAF-9FFE-925CECA388AA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{90A27E44-2E05-4254-AC61-FDEC93DA4000}"
+	ProjectSection(SolutionItems) = preProject
+		WinAppStock.cs = WinAppStock.cs
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F1D662DA-A0A2-4EAF-9FFE-925CECA388AA}.Debug|x86.ActiveCfg = Debug|x86
+		{F1D662DA-A0A2-4EAF-9FFE-925CECA388AA}.Debug|x86.Build.0 = Debug|x86
+		{F1D662DA-A0A2-4EAF-9FFE-925CECA388AA}.Release|x86.ActiveCfg = Release|x86
+		{F1D662DA-A0A2-4EAF-9FFE-925CECA388AA}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
