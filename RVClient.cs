@@ -341,12 +341,22 @@ namespace WinRVClient
             }
 
             IPHostEntry entries = Dns.GetHostEntry(address);
-            if (entries.AddressList.Length < 1)
+            IPAddress selectedIp = null;
+
+            foreach (IPAddress ip in entries.AddressList)
+            {
+                if (ip.AddressFamily == AddressFamily.InterNetwork)
+                {
+                    selectedIp = ip;
+                }
+            }
+
+            if (selectedIp == null)
             {
                 throw new Exception("Host '" + address + "' is unreachable by DNS.");
             }
 
-            this.serverAddress = entries.AddressList[0];
+            this.serverAddress = selectedIp;
             this.serverPort = port;
         }
 
