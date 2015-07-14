@@ -140,6 +140,7 @@ namespace WinRVClient
 
             });
 
+            thread.IsBackground = true;
             thread.Start(context);
         }
 
